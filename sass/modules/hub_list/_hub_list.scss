@@ -1,0 +1,69 @@
+//////////////////////////////
+// MODULES: Component styles that are layout independent 
+//////////////////////////////
+ [role="banner"] {
+ 
+ }
+ [role="navigation"].main ul.main{
+  // background-color: nth($primary, 1);
+  // color: white;
+   border-bottom: 1px solid nth($black, 3);
+   border-top: 1px solid nth($black, 3);
+   padding: 0 2px;
+   li {
+     font-size: .9em;
+   }
+ }
+
+
+
+[role="complementary"].part-of-hub {
+    background-color: lighten(nth($tertiary, 5), 3%);
+    header {
+        padding: .5em .5em .5em 1em;
+        background-color: nth($tertiary, 4);
+    }
+}
+
+[role="directory"]#hometoc {
+    margin-top: 2em;
+    margin-bottom: 2em;
+    h1.hub-title {
+        font-size: 2em;
+        padding: .4em 0 0 0;
+        margin: 0 0 .1em 0;
+        color: nth($black, 1);
+    }
+    p {
+        margin: 0.1em 0;
+    }
+    .view-mode-toc_spoke {
+        padding-top: 1.5rem;
+        line-height: 1.5;
+        .toc-spoke-thumb {
+            float: left;
+        }
+        h2 {
+            font-size: 1.3rem;
+            margin-top: 0;
+            padding-top: 0;
+            padding-bottom: .4rem;
+            margin-left: 110px;
+            a {
+                display: block;
+            }
+        }
+        .byline {
+            // margin-top: 0em;
+            font-size: 1em;
+            margin-left: 110px;
+        }
+        .toc-spoke-date {
+            margin-left: 110px;
+        }
+        span {
+            display: inline-block;
+            margin-right: .3em;
+        }
+    }
+}
